@@ -7,7 +7,7 @@ Siyang Zeng (Sunny)  <a href = "https://github.com/SunnySunnia">SunnySunnia</a> 
 Alex Chao  <a href = "https://github.com/alexchao56">alexchao56</a> : <alexchao56@gmail.com>  
 Theresa Andrasfay <a href ="https://github.com/tandrasfay">tandrasfay</a>   
 David Barrera <a href = "https://github.com/jest4pun">jest4pun</a> 
-
+Xiaorui (Sherry) Xia <a href = "https://github.com/xsherryxia">xsherryxia</a> : <x_sherry_xia@berk>
 ==========
 ## End of Semester Timeline
 
