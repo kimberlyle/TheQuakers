@@ -18,6 +18,9 @@ Xiaorui (Sherry) Xia <a href = "https://github.com/xsherryxia">xsherryxia</a> : 
 
 Roadblock: So far we are confused about his code to generate the error curve.
 
+Luen Conference-Call note:  
+<https://github.com/SunnySunnia/StatWork/blob/master/2013-11-19Luen.md>
+
 ### Thursday November 21
 Modify the algorithm and start trying with different parameters.
 Figure out a way to tune the parameter. (Since there are 2 free parameters, hold one fixed and test on the other one, or changing both of them in some ways.
