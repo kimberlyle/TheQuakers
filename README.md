@@ -13,8 +13,10 @@ Xiaorui (Sherry) Xia <a href = "https://github.com/xsherryxia">xsherryxia</a> : 
 ## End of Semester Timeline
 
 ### Tuesday November 19
-Look at the upgraded version of the MDA window length function suggested by Prof. Stark and develop an algorithm for tuning parameters and producing error diagrams.    
-Assemble questions for Luen conference call. So far we are confused about his code to generate the error curve.
+- Look at the upgraded version of the MDA window length function suggested by Prof. Stark and develop an algorithm for tuning parameters and producing error diagrams.    
+- Assemble questions for Luen conference call.   
+
+Roadblock: So far we are confused about his code to generate the error curve.
 
 ### Thursday November 21
 Modify the algorithm and start trying with different parameters.
