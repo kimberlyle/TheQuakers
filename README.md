@@ -18,7 +18,7 @@ Xiaorui (Sherry) Xia <a href = "https://github.com/xsherryxia">xsherryxia</a> : 
 
 Roadblock: So far we are confused about his code to generate the error curve.
 
-Luen Conference-Call note:  
+Luen Conference-Call notes:  
 <https://github.com/SunnySunnia/StatWork/blob/master/2013-11-19Luen.md>
 
 ### Thursday November 21
