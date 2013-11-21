@@ -49,8 +49,6 @@ References:
 
 [More Notes](https://github.com/xsherryxia/Notes/blob/master/11-19-2013)
 
-[Brief Recording of the Conference Call](https://docs.google.com/file/d/0B40SM3wakW6LYmtENXRKX0ZkZms/edit)
-
 [Luen's Slides](http://www.stat.berkeley.edu/~bradluen/slides.pdf)
 
 
