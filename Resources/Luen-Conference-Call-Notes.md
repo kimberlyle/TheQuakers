@@ -36,10 +36,10 @@ The repo contains the maintakeaways from the conference call with Professor Luen
 - not sure about human-power programing time  
 
 #For Future
--Luen said that he will try to be in contact with us as we go through with him our various models/approaches.
--If there still remains questions, we want to collect a list of questions from the groups which we will present to 
+- Luen said that he will try to be in contact with us as we go through with him our various models/approaches.
+- If there still remains questions, we want to collect a list of questions from the groups which we will present to 
 professor Luen later on.
--Ultimately, we want to get him onboard to work closely with us in the future.
+- Ultimately, we want to get him onboard to work closely with us in the future.
 
 
 
