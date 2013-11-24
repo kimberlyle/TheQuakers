@@ -71,8 +71,10 @@ Modify the algorithm and start trying with different parameters.
 Figure out a way to tune the parameter. (Since there are 2 free parameters, hold one fixed and test on the other one, or changing both of them in some ways.
 
 ### Tuesday November 26
-Should have a set of 'best' parameters for our window function and present our results.
-If ours cannot beat any of the models, maybe try with the 'Optimization approach"
+Try out Empirical Model completely separate from MDA model. Try out its accuracy.
+Should have a set of 'best' parameters for our window function. 
+Present our results.
+
 
 ### Thursday November 28
 Thanksgiving (Group members can continue to work on tasks)
