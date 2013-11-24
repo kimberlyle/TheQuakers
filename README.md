@@ -71,10 +71,8 @@ Modify the algorithm and start trying with different parameters.
 Figure out a way to tune the parameter. (Since there are 2 free parameters, hold one fixed and test on the other one, or changing both of them in some ways.
 
 ### Tuesday November 26
-Try out Empirical Model completely separate from MDA model. Try out its accuracy.
-Should have a set of 'best' parameters for our window function. 
-Present our results.
-
+Should have a set of 'best' parameters for our window function and present our results.
+If ours cannot beat any of the models, maybe try with the 'Optimization approach"
 
 ### Thursday November 28
 Thanksgiving (Group members can continue to work on tasks)
@@ -105,6 +103,8 @@ Attend Data Science Faire
 
 
 ===============
+Links to datasets:
+
 data: <https://github.com/stat157/analyzers/wiki/Data-from-Curators>  
 data with NICE time format: (mag>=4,5)  
 <https://www.dropbox.com/s/gttgdef4j0z02hd/CleanDataWithCorrectTime.csv>  
