@@ -13,7 +13,17 @@ Let's play with these parameters!!
 
 First we set number of successors = 1, and try 70, 75, 80, 85, 90, 95, 100 percentiles.  
 Error diagram:  
-![](TunningError1.jpeg)  
+![](TuningError1.jpeg)  
 
 It's hard to compare, let's calculate the area under the curve:  
 ![](AreaCom1.jpeg)  
+
+Seems like 0.95 has the smallest value. To be more accurate, we look closer into each one of the percentiles from 90 to 100.  
+Comparison of the integration:  
+![](AreaCom2.jpeg)  
+
+
+----
+Follow the similar steps, we found every optimal percentile for different number of successors to consider.  
+
+[etas-training.R](etas-training.R) is the corresponding R code file, including the summary of the results to each of the parameters.
