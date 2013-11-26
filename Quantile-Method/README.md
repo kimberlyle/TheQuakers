@@ -26,4 +26,4 @@ Comparison of the integration:
 ----
 Follow the similar steps, we found every optimal percentile for different number of successors to consider.  
 
-[etas-training.R](etas-training.R) is the corresponding R code file, including the summary of the results to each of the parameters.
+[Quakers-QuantileMethod.R](Quakers-QuantileMethod.R) is the corresponding R code file, including the summary of the results to each of the parameters.
