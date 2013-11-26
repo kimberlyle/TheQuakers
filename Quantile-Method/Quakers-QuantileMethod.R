@@ -11,6 +11,10 @@ Qfun=function(mag){
   return(win)
 }
 
+mags=DataFrame[DataFrame$magnitude > 3,]$magnitude
+times=DataFrame[DataFrame$magnitude > 3,]$time
+maglist=seq(3.1,max(mags)+0.1,0.1)
+
 start = ISOdate(1938,1,1,0,0,0)
 test.start = ISOdate(1989,1,1,0,0,0)
 finish = ISOdate(2013,1,1,0,0,0)
@@ -24,9 +28,6 @@ n.training = sum(times<training.period)
 n.test = sum(times<period) - n.training
 n.events = sapply(timelist,function(x){sum(times<x)})
 
-mags=DataFrame[DataFrame$magnitude > 3,]$magnitude
-times=DataFrame[DataFrame$magnitude > 3,]$time
-maglist=seq(3.1,max(mags)+0.1,0.1)
 
 #everything up to this point will be consistent for all pocess of testing models or parameters.
 
