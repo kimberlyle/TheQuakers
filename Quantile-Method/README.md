@@ -19,7 +19,7 @@ It's hard to compare, let's calculate the area under the curve:
 ![](AreaCom1.jpeg)  
 
 Seems like 0.95 has the smallest value. To be more accurate, we look closer into each one of the percentiles from 90 to 100.  
-Comparison of the integration:  
+Comparison of the integrations:  
 ![](AreaCom2.jpeg)  
 
 
