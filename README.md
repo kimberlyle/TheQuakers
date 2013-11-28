@@ -73,12 +73,16 @@ Figure out a way to tune the parameter. (Since there are 2 free parameters, hold
 ### Tuesday November 26
 Should have a set of 'best' parameters for our window function and present our results.
 If ours cannot beat any of the models, maybe try with the 'Optimization approach"
+(Update* was able to find out the parameters from Professor Stark and are trying to create a few updated models based on his suggestions)
 
 ### Thursday November 28
 Thanksgiving (Group members can continue to work on tasks)
+Communicate with each other via github, email, facebook
 
 ### Tuesday December 3
 Gather outputs from analyzers. Use these to make graphs for the final presentation. Compare different parameters found by different groups. Determine the best model to beat ETAS.
+
+Regroup and see whether or not we have a model ready to present or if we should create a wrap-up summary presentation of all the work we have done so that we'll have something to show. 
 
 ### Thursday December 5
 Finalize graphs. Make information rich with final axis labels, titles, descriptions, links to data sources, etc.
