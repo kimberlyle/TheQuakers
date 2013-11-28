@@ -30,6 +30,6 @@ data = data[data$magnitude>3,]
 time = data$time
 magnitude = data$magnitude
 test_nu_MDA = seq(4, 8, 0.2)
-result_MDA = get_error_diagrams_MDA(time, magnitude, test_nu)
+result_MDA = get_error_diagrams_MDA(time, magnitude, test_nu_MDA)
 
 save(result_MDA, test_nu_MDA, time, magnitude, file = './MDAModel.RData')
