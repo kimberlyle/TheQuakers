@@ -1,3 +1,5 @@
+# Function: get_error_rate
+
 # Input:
 # time: time for each earthquake in days
 # window_size: length of alarm for each corresponding earthquake in days
