@@ -11,7 +11,8 @@ get_error_rate = function(time, window_size){
   # check for input
   if (!is.numeric(time) | !is.numeric(window_size)) stop('time and window_size must be all numeric')
   if (length(time) != length(window_size)) stop('time and window_size should have same length')
-  if (any(is.na(time)) | any(is.na(window_size))) stop('time and window_size shoud not contain NAs')
+  if (any(is.na(time) | is.null(time) | is.nan(time) | ! is.numeric(time))
+      | any(is.na(window_size) | is.null(window_size | is.nan(window_size | ! is.numeric(window_size))))) stop('time and window_size shoud be number wtih no NA, NULL or NAN')
   
   # Get information about the input
   size = length(time)  
@@ -54,4 +55,40 @@ get_error_rate = function(time, window_size){
   
   # Return the list
   return (list('v' = v, 'tau' = tau))
+}
+
+
+
+# Function: get_error_diagram
+
+# Input:
+# time: time for each earthquake in days
+# model: the winodw size without the scaling variable k
+# k: list of 1000 scaling variables to change window size, and thus the tau
+#    default ensures that tau and almost evenly distributed in range(0,1)
+# Output: a list of taus and error rates for a specific model
+get_error_diagram = function(time, model, k = 0.98 ^ (1:1000)){
+  
+  # Check input
+  if (length(k) != 1000) stop("k must be of length 1000")
+  if (any(is.na(k) | is.null(k) | is.nan(k) | !is.numeric(k))) stop("k should be number with no NA, NULL or NAN")
+  
+  # Initilize variables
+  vs = rep(0, 1000)
+  taus = rep(0, 1000)
+  
+  # Get tau and error for each given k
+  for (i in 1:1000){
+    window_size = k[i] * model
+    result = get_error_rate(time, window_size)
+    vs[i] = result$v
+    taus[i] = result$tau
+    # These are here to ensure you the program is still running 
+    if (i%%5 == 0){
+      print(paste("get the first ", i, " results"))
+    }
+  } 
+  
+  # Return the result
+  return (list("vs" = vs, "taus" = taus))
 }
