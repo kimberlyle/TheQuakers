@@ -7,6 +7,7 @@
 # v: the error rate for the input
 # tau: time covered by alarm / (time[last] - time[first]) 
 get_error_rate = function(time, window_size){
+
   # check for input
   if (!is.numeric(time) | !is.numeric(window_size)) stop('time and window_size must be all numeric')
   if (length(time) != length(window_size)) stop('time and window_size should have same length')

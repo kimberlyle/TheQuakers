@@ -1,16 +1,11 @@
-# Analysis on the models
+# Analysis on the MDA models
 # The goodness of fit depend on what range of tau we use
 
+source('ErrorAreaFunction.R')
 load("./MDAModel.RData")
 
-get_error_area = function(result, leftBound = max(sapply(result, function(x){min(x$taus)})), rightBound = min(sapply(result, function(x){max(x$taus)}))){
-  maxmin = max(sapply(result, function(x){min(x$taus)}))
-  minmax = min(sapply(result, function(x){max(x$taus)}))
-  if (leftBound < maxmin || rightBound > minmax) stop(paste('The minimum leftBound is: ', maxmin, '; The maximum rightBound is: ', minmax, sep=''))  
-  errs = sapply(result, function(x){integrate.xy(x$taus, x$vs, a = leftBound, b = rightBound)})
-  return (errs)
-}
 
+# Test on error area for tau of different range
 png(file = "./errs1.png", 480, 320)
 errs = get_error_area(result, 0.01)
 plot(test_nu, errs, cex = 0.5, pch = 19, type = 'b', main = "Area under ErrorDiagram for tau > 0.01")
@@ -41,6 +36,8 @@ errs6 = get_error_area(result, 0.01, 0.125)
 plot(test_nu, errs6, col = 'purple', cex = 0.5, pch = 19, type = 'b', main = "Area under ErrorDiagram for tau (0.01, 0.125)")
 dev.off()
 
+
+# Find for which nu is the area the minimum
 min1 = which(errs == min(errs))
 min2 = which(errs2 == min(errs2))
 min3 = which(errs3 == min(errs3))
@@ -48,6 +45,8 @@ min4 = which(errs4 == min(errs4))
 min5 = which(errs5 == min(errs5))
 min6 = which(errs6 == min(errs6))
 
+
+# Plot the Error Diagram
 png(file = "./errorDiagram1.png", 480, 320)
 plot(result$nu5.4$taus, result$nu5.4$vs, cex = 0.1, pch = 19, main = 'Error diagrams for nu = 5.4', xlab = 'tau', ylab = 'v')
 dev.off()
