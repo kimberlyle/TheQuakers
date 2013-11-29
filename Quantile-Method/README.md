@@ -1,5 +1,31 @@
 We want to try this really simple model: pick a cutoff time for the successors that we want to cover by our alarm. We pick the cutoff time by looking at event times of the successors of earthquakes within a range as the data and find a specific percentile of the data. The percentiles will be our lengths of alarm window for earthquakes with magnitudes in that range.  
 
+Updated:
+----------  
+Using our own algorithm of producing tao and v, we examined the models again:  
+
+With our algorithm, Luen's MDA model returns:  
+![](ErrorLuen.jpeg)  
+
+
+Then similar tuning processes are done, and it is showen that considering 5 successors to the earthquakes and seting 95 percentile will return the least area under the error curve:  
+![](Error595.jpeg)  
+Detail results to each parameter can be found in [result.csv](result.csv)  
+
+
+As Prof. Stark suggested, we might want to hold alarm longer for bigger earthquakes to cover more successors. We then thought of setting lower percentiles covering fewer successors for small earthquakes and higher percentiles covering more successors for bigger earthquakes. So we tuned over the number of successors with a list increasing percentiles (70-100) corresponding to each magnitude range.  
+Results to the parameters can be found in [result1.csv](result1.csv)  
+Number of successor = 1 gives the smallest area:  
+![](ErrorDiffQuant.jpeg)  
+
+
+Though the this increasing-percentile approach does a little bit better, neither the flat-percentile approach nor the increasing-percentile approach outperforms Luen's MDA model.  
+
+
+------------
+Previous Findings:
+-----------
+
 For example, we found the 90-percentiles of the successor-times of earthquakes with magnitude from 3 to 7.5 with bin size 0.1:   
 ![](90Quantile.jpeg)  
 
