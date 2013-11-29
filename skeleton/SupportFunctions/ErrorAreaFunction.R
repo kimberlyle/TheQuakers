@@ -46,7 +46,12 @@ get_error_rate_average = function(result, leftBound = NA, rightBound = NA ){
   if (leftBound < maxmin || rightBound > minmax) stop(paste('The minimum leftBound is: ', maxmin, '; The maximum rightBound is: ', minmax, sep=''))  
 
   # Get errors
-  errs = sapply(result, function(x){integrate.xy(x$taus, x$vs, a = leftBound, b = rightBound)})
+  errs = sapply(result, function(x){
+    points_order = order(x$taus)
+    taus = x$taus[points_order]
+    vs = x$vs[points_order]
+    return(integrate.xy(taus, vs, a = leftBound, b = rightBound))
+    })
   # errs = sapply(result, function(x){approx_integral(x$taus, x$vs, a = leftBound, b = rightBound)})
   return (errs/(rightBound - leftBound))
 }
