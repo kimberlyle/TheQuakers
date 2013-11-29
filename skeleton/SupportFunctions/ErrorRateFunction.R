@@ -70,15 +70,15 @@ get_error_rate = function(time, window_size){
 get_error_diagram = function(time, model, k = 0.98 ^ (1:1000)){
   
   # Check input
-  if (length(k) != 1000) stop("k must be of length 1000")
   if (any(is.na(k) | is.null(k) | is.nan(k) | !is.numeric(k))) stop("k should be number with no NA, NULL or NAN")
   
   # Initilize variables
-  vs = rep(0, 1000)
-  taus = rep(0, 1000)
+  size = length(k) 
+  vs = rep(0, size)
+  taus = rep(0, size)
   
   # Get tau and error for each given k
-  for (i in 1:1000){
+  for (i in 1:size){
     window_size = k[i] * model
     result = get_error_rate(time, window_size)
     vs[i] = result$v
