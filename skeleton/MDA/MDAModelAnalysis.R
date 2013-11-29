@@ -8,37 +8,37 @@ load("./MDA/MDAModel.RData")
 # Test on error area for tau of different range
 png(file = "./MDA/errs1.png", 480, 320)
 errs = get_error_rate_average(result_MDA, 0.01)
-plot(test_nu_MDA, errs, cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau > 0.01")
+plot(test_nu_MDA, errs, cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau > 0.01", xlab = "nu", ylab = "error rate")
 dev.off()
 
 png(file = "./MDA/errs2.png", 480, 320)
 errs2 = get_error_rate_average(result_MDA, 0.01, 0.75)
-plot(test_nu_MDA, errs2, col = 'red', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.75)")
+plot(test_nu_MDA, errs2, col = 'red', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.75)", xlab = "nu", ylab = "error rate")
 dev.off()
 
 png(file = "./MDA/errs3.png", 480, 320)
 errs3 = get_error_rate_average(result_MDA, 0.01, 0.5)
-plot(test_nu_MDA, errs3, col = 'blue', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.5)")
+plot(test_nu_MDA, errs3, col = 'blue', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.5)", xlab = "nu", ylab = "error rate")
 dev.off()
 
 png(file = "./MDA/errs4.png", 480, 320)
 errs4 = get_error_rate_average(result_MDA, 0.01, 0.375)
-plot(test_nu_MDA, errs4, col = 'yellow', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.375)")
+plot(test_nu_MDA, errs4, col = 'yellow', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.375)", xlab = "nu", ylab = "error rate")
 dev.off()
 
 png(file = "./MDA/errs5.png", 480, 320)
 errs5 = get_error_rate_average(result_MDA, 0.01, 0.25)
-plot(test_nu_MDA, errs5, col = 'green', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.25)")
+plot(test_nu_MDA, errs5, col = 'green', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.25)", xlab = "nu", ylab = "error rate")
 dev.off()
 
 png(file = "./MDA/errs6.png", 480, 320)
 errs6 = get_error_rate_average(result_MDA, 0.01, 0.125)
-plot(test_nu_MDA, errs6, col = 'purple', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.125)")
+plot(test_nu_MDA, errs6, col = 'purple', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.01, 0.125)", xlab = "nu", ylab = "error rate")
 dev.off()
 
 png(file = "./MDA/errs7.png", 480, 320)
 errs7 = get_error_rate_average(result_MDA, 0.3, 0.5)
-plot(test_nu_MDA, errs7, col = 'purple', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.3, 0.5)")
+plot(test_nu_MDA, errs7, col = 'purple', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.3, 0.5)", xlab = "nu", ylab = "error rate")
 dev.off()
 
 # Find for which nu is the area the minimum
