@@ -1,4 +1,4 @@
-source('./SupprotFunctions/ErrorAreaFunction.R')
+source('./SupportFunctions/ErrorAreaFunction.R')
 load("./MDAScaledBySub/MDAScaledBySubModel.RData")
 
 errs = get_error_rate_average(result_MDASub, 0.01)

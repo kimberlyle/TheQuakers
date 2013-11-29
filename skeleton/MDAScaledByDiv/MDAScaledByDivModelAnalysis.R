@@ -1,4 +1,4 @@
-source('./SupprotFunctions/ErrorAreaFunction.R')
+source('./SupportFunctions/ErrorAreaFunction.R')
 load("./MDAScaledByDiv/MDAScaledByDivModel.RData")
 
 # Analysis on W(M) = k * (nu ^M / M)

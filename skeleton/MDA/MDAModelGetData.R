@@ -1,7 +1,7 @@
 # This file test on Leun's MDA model: W(M) = k * nu ^M
 # Get all tau and v information for different nus
 
-source("./SupprotFunctions/ErrorRateFunction.R")
+source("./SupportFunctions/ErrorRateFunction.R")
 
 
 # Function: get_error_diagrams

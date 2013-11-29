@@ -1,7 +1,7 @@
 # This file test on a improved model from MDA: W(M) = k * (nu ^M - tM)
 # Get all tau and v information for different nus
 
-source("./SupprotFunctions/ErrorRateFunction.R")
+source("./SupportFunctions/ErrorRateFunction.R")
 
 
 # Function: get_error_diagrams

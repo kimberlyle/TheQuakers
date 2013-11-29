@@ -1,7 +1,7 @@
 # Analysis on the MDA models
 # The goodness of fit depend on what range of tau we use
 
-source('./SupprotFunctions/ErrorAreaFunction.R')
+source('./SupportFunctions/ErrorAreaFunction.R')
 load("./MDA/MDAModel.RData")
 
 
