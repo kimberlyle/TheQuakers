@@ -58,6 +58,14 @@ lines(test_nu_MDASub, errs7[seq(11,231,11)], cex = 0.5, pch = 19, type = 'b', co
 legend('right', legend = c('t = 0', 't = 1', 't = 2'), fill = c('green', 'blue', 'red'), cex = 0.6)
 dev.off()
 
+meanOfErrorRate = data.frame('r0.01To1' = errs, 
+                             'r0.01To0.75' = errs2, 
+                             'r0.01To0.5' = errs3, 
+                             'r0.01To0.375' = errs4,
+                             'r0.01To0.25' = errs5,
+                             'r0.01To0.125' = errs6,
+                             'r0.3To0.5' = errs7)
+write.csv(meanOfErrorRate, file = './MDAScaledBySub/MDASubMeanOfErrorRate.csv')
 
 png(file = "./MDAScaledBySub/errst1.png", 480, 320)
 plot(test_t_MDASub, errs[1:11], cex = 0.5, pch = 19, col = alpha('green', 0.7), main = 'Area under ErrorDiagram for tau > 0.01, nu = 4', xlab = 't', ylab = 'error rate')
@@ -78,3 +86,5 @@ dev.off()
 png(file = "./MDAScaledBySub/errst5.png", 480, 320)
 plot(test_t_MDASub, errs[221:231], cex = 0.5, pch = 19, col = alpha('purple', 0.7), main = 'Area under ErrorDiagram for tau > 0.01, nu = 8', xlab = 't', ylab = 'error rate')
 dev.off()
+
+

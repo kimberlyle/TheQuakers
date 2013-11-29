@@ -41,6 +41,15 @@ errs7 = get_error_rate_average(result_MDA, 0.3, 0.5)
 plot(test_nu_MDA, errs7, col = 'purple', cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau (0.3, 0.5)", xlab = "nu", ylab = "error rate")
 dev.off()
 
+meanOfErrorRate = data.frame('r0.01To1' = errs, 
+                            'r0.01To0.75' = errs2, 
+                            'r0.01To0.5' = errs3, 
+                            'r0.01To0.375' = errs4,
+                            'r0.01To0.25' = errs5,
+                            'r0.01To0.125' = errs6,
+                            'r0.3To0.5' = errs7)
+write.csv(meanOfErrorRate, file = './MDA/MDAMeanOfErrorRate.csv')
+
 # Find for which nu is the area the minimum
 min1 = which(errs == min(errs))
 min2 = which(errs2 == min(errs2))
