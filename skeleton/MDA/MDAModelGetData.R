@@ -1,7 +1,7 @@
 # This file test on Leun's MDA model: W(M) = k * nu ^M
 # Get all tau and v information for different nus
 
-source("./ErrorRateFunction.R")
+source("./SupprotFunctions/ErrorRateFunction.R")
 
 
 # Function: get_error_diagrams
@@ -32,4 +32,4 @@ magnitude = data$magnitude
 test_nu_MDA = seq(4, 8, 0.2)
 result_MDA = get_error_diagrams_MDA(time, magnitude, test_nu_MDA)
 
-save(result_MDA, test_nu_MDA, time, magnitude, file = './MDAModel.RData')
+save(result_MDA, test_nu_MDA, time, magnitude, file = './MDA/MDAModel.RData')

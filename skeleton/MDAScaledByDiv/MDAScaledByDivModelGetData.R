@@ -1,7 +1,7 @@
 # This file test on a improved model from MDA: W(M) = k * (nu ^M / M)
 # Get all tau and v information for different nus
 
-source("./ErrorRateFunction.R")
+source("./SupprotFunctions/ErrorRateFunction.R")
 
 
 # Function: get_error_diagrams
@@ -17,7 +17,7 @@ get_error_diagrams_MDADiv = function(time, magnitude, nus){
   for (i in nus){
     print(paste('nu: ', i))
     model = i ^ magnitude / magnitude
-    result[[paste('nu', i)]] = get_error_diagram(time, model)        
+    result[[paste('nu', i, sep = '')]] = get_error_diagram(time, model)        
   }
   return (result)
 }
@@ -30,7 +30,7 @@ data = data[data$magnitude>3,]
 # run get_error_diagrams
 time = data$time
 magnitude = data$magnitude
-test_nu_MDADiv = seq(5, 6, 0.5)
+test_nu_MDADiv = seq(4, 8, 0.2)
 result_MDADiv = get_error_diagrams_MDADiv(time, magnitude, test_nu_MDADiv)
 
-save(result_MDADiv, test_nu_MDADiv, test_t_MDADiv, time, magnitude, file = './MDAScaledByDivModel.RData')
+save(result_MDADiv, test_nu_MDADiv, time, magnitude, file = './MDAScaledByDiv/MDAScaledByDivModel.RData')

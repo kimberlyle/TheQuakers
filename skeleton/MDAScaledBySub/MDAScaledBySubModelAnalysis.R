@@ -1,10 +1,10 @@
-source('ErrorAreaFunction.R')
-load("./MDAScaledBySubModel.RData")
+source('./SupprotFunctions/ErrorAreaFunction.R')
+load("./MDAScaledBySub/MDAScaledBySubModel.RData")
 
-errs = get_error_area(result_MDASub, 0.01)
+errs = get_error_rate_average(result_MDASub, 0.01)
 plot(test_t_MDASub, errs, cex = 0.5, pch = 19, type = 'b', main = "Area under ErrorDiagram for tau > 0.01")
 
-errs = get_error_area(result_MDASub, 0.01, 0.125)
+errs = get_error_rate_average(result_MDASub, 0.01, 0.125)
 plot(test_t_MDASub, errs, cex = 0.5, pch = 19, type = 'b', main = "Area under ErrorDiagram for tau > 0.01")
 
 
