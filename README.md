@@ -66,18 +66,32 @@ Roadblock: So far we are confused about his code to generate the error curve.
 Luen Conference-Call notes:  
 <https://github.com/SunnySunnia/TheQuakers/blob/master/Resources/Luen-Conference-Call-Notes.md>
 
+
 ### Thursday November 21
 Modify the algorithm and start trying with different parameters.
 Figure out a way to tune the parameter. (Since there are 2 free parameters, hold one fixed and test on the other one, or changing both of them in some ways.
 
+Roadblock: not able to understand the logic of Luen's way of producing error diagram.  
+
+So, while still waiting for Luen's response to explain, we decide to try another approach: setting specific percentiles of the waiting time to next event of earthquakes as the window lengths to those corresponding magnitudes.  
+
+Results:  
+<https://github.com/SunnySunnia/TheQuakers/tree/master/Quantile-Method>  
+
+
 ### Tuesday November 26
 Should have a set of 'best' parameters for our window function and present our results.
 If ours cannot beat any of the models, maybe try with the 'Optimization approach"
-(Update* was able to find out the parameters from Professor Stark and are trying to create a few updated models based on his suggestions)
+(Update* was able to find out the parameters from Professor Stark and are trying to create a few updated models based on his suggestions)  
+
 
 ### Thursday November 28
 Thanksgiving (Group members can continue to work on tasks)
 Communicate with each other via github, email, facebook
+
+Successfully developed our own algprithm of producing error diagrams and comparing models by their integrated areas under the error diagrams.  
+Details including functions can be found here:  
+<https://github.com/SunnySunnia/TheQuakers/tree/master/skeleton>
 
 ### Tuesday December 3
 Gather outputs from analyzers. Use these to make graphs for the final presentation. Compare different parameters found by different groups. Determine the best model to beat ETAS.
