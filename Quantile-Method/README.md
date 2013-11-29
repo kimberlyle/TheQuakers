@@ -10,15 +10,16 @@ With our algorithm, Luen's MDA model returns:
 
 Then similar tuning processes are done, and it is showen that considering 5 successors to the earthquakes and seting 95 percentile will return the least area under the error curve:  
 ![](Error595.jpeg)  
-Detail results to each parameter can be found in ![](result.csv)  
+Detail results to each parameter can be found in [result.csv](result.csv)  
 
 
-As Prof. Stark suggested, we might want to hold alarm longer for bigger earthquakes to cover more successors. We then thought of setting lower percentiles covering fewer successors for small earthquakes and higher percentiles covering more successors for bigger earthquakes. So we tuned over the number of successors with a list incressing percentiles (70-100) corresponding to each magnitude range.  
-![](result1.csv)  
+As Prof. Stark suggested, we might want to hold alarm longer for bigger earthquakes to cover more successors. We then thought of setting lower percentiles covering fewer successors for small earthquakes and higher percentiles covering more successors for bigger earthquakes. So we tuned over the number of successors with a list increasing percentiles (70-100) corresponding to each magnitude range.  
+Results to the parameters can be found in [result1.csv](result1.csv)  
+Number of successor = 1 gives the smallest area:  
 ![](ErrorDiffQuant.jpeg)  
 
 
-Unfortunately, neither the flat-percentile approach nor the increasing-percentile approach outperforms Luen's MDA model.  
+Though the this increasing-percentile approach does a little bit better, neither the flat-percentile approach nor the increasing-percentile approach outperforms Luen's MDA model.  
 
 ------------
 
