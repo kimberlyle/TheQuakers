@@ -21,7 +21,9 @@ Number of successor = 1 gives the smallest area:
 
 Though the this increasing-percentile approach does a little bit better, neither the flat-percentile approach nor the increasing-percentile approach outperforms Luen's MDA model.  
 
+
 ------------
+Previous Findings:
 
 For example, we found the 90-percentiles of the successor-times of earthquakes with magnitude from 3 to 7.5 with bin size 0.1:   
 ![](90Quantile.jpeg)  
