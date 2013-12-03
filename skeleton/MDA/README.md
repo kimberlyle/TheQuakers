@@ -1,5 +1,6 @@
 Results for MDA Model (W(M) = k * nu ^M)
 --------------------
+![](errs0.png) 
 ![](errs1.png) 
 ![](errs2.png) 
 ![](errs3.png) 
