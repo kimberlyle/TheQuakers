@@ -6,6 +6,11 @@ load("./MDAScaledByDiv/MDAScaledByDivModel.RData")
 
 
 # Test on error area for tau of different range
+png(file = "./MDAScaledByDiv/errs0.png", 480, 320)
+errs = get_error_rate_average(result_MDADiv)
+plot(test_nu_MDADiv, errs, cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for all taus", xlab = "nu", ylab = "error rate")
+dev.off()
+
 png(file = "./MDAScaledByDiv/errs1.png", 480, 320)
 errs = get_error_rate_average(result_MDADiv, 0.01)
 plot(test_nu_MDADiv, errs, cex = 0.5, pch = 19, type = 'b', main = "Error rate mean for tau > 0.01", xlab = "nu", ylab = "error rate")
