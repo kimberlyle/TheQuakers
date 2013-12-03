@@ -1,5 +1,6 @@
 Results for MDA Div Model W(M) = k * (nu ^M - tM)
 -------------------------------------------------
+![](errs0.png) 
 ![](errs1.png) 
 ![](errs2.png) 
 ![](errs3.png) 
