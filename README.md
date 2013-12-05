@@ -107,17 +107,13 @@ Any last minute changes. Provide description of process to the presentors for De
 ### Thursday December 12
 Attend Data Science Faire 
 
-
-
-
-
-
-
-
-
-
-
-
+=================
+Final Results: 
+-ECDF: <https://github.com/SunnySunnia/TheQuakers/tree/master/Quantile-Method>
+-Scaled MDA
+--Scaled by division: <http://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledByDiv>
+--Scaled by subtraction: <https://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledBySub>
+*These are the main takeaways of our project
 
 
 ===============
