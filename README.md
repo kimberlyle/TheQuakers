@@ -98,8 +98,10 @@ Gather outputs from analyzers. Use these to make graphs for the final presentati
 
 Regroup and see whether or not we have a model ready to present or if we should create a wrap-up summary presentation of all the work we have done so that we'll have something to show. 
 
+Our Final Quake Presentation: <https://docs.google.com/a/berkeley.edu/presentation/d/18xqnLrV0QYs6DH1QRwFwGcOcU2ff9X6nhPDliJxy9gk/edit#slide=id.p>
+
 ### Thursday December 5
-Finalize graphs. Make information rich with final axis labels, titles, descriptions, links to data sources, etc.
+Choose best graphs for data science fair. Updated results on: <https://docs.google.com/a/berkeley.edu/document/d/1YHruJF6JhOOQ3yputnTgFFLCiTmZqHTg-j5oCipsIBE/edit#heading=h.d23q731yqkzp>
 
 ### Tuesday December 10
 Any last minute changes. Provide description of process to the presentors for Dec 12 Data Science Faire.
@@ -108,11 +110,11 @@ Any last minute changes. Provide description of process to the presentors for De
 Attend Data Science Faire 
 
 =================
-Final Results: 
--ECDF: <https://github.com/SunnySunnia/TheQuakers/tree/master/Quantile-Method>
--Scaled MDA
---Scaled by division: <http://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledByDiv>
---Scaled by subtraction: <https://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledBySub>
+###Final Results: 
+- ECDF: <https://github.com/SunnySunnia/TheQuakers/tree/master/Quantile-Method>
+- Scaled MDA
+-- Scaled by division: <http://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledByDiv>
+-- Scaled by subtraction: <https://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledBySub>
 *These are the main takeaways of our project
 
 
