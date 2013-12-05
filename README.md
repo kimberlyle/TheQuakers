@@ -113,9 +113,9 @@ Attend Data Science Faire
 ###Final Results: 
 - ECDF: <https://github.com/SunnySunnia/TheQuakers/tree/master/Quantile-Method>
 - Scaled MDA
--- Scaled by division: <http://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledByDiv>
--- Scaled by subtraction: <https://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledBySub>
-*These are the main takeaways of our project
+- Scaled by division: <http://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledByDiv>
+- Scaled by subtraction: <https://github.com/SunnySunnia/TheQuakers/tree/master/skeleton/MDAScaledBySub>
+*These are the main takeaways of our project, but take a closer look at our repositories for more details on what we did.
 
 
 ===============
