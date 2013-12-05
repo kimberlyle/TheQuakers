@@ -12,5 +12,7 @@ Please clone the repository
 * **If you want to play around with the results:** all of the data are in the `.RData` file. And the `xxAnalysis.R` files serve as examples on how to analyze the data. 
 * **If you want to draw Error Diagram for your own model**, you can use the functions in [SupportFunctions](./SupportFunctions). MDA, MDASub, and MDADiv all use these functions. Ussage is in the comment of the scripts. Please refer to `xxModelGetData.R` for examples on how to use them.
 * **A demonstration on how to use `SupportFunctions` are in [Demo](./Demo)**.
-* **If you want to reproduce the models**, you need to have [DataFrame.csv](https://www.dropbox.com/s/tzx4qqxhh9u9iz2/DataFrame.csv) in this folder. Please `setwd("[Where you save the repository]/TheQuakers/skeleton/")`before running the code. MDA and MDADiv takes about 1 hour(21 models each). MDAsub takes about 8 hours(210 models).  
+* **If you want to reproduce the models**, you need to have [DataFrame.csv](https://www.dropbox.com/s/tzx4qqxhh9u9iz2/DataFrame.csv) in this folder. Please `setwd("[Where you save the repository]/TheQuakers/skeleton/")`before running the code.
+* MDA and MDADiv takes about 1 hour(21 models each). 
+* MDAsub takes about 8 hours(210 models).  
 
