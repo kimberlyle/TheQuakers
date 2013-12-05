@@ -1,9 +1,9 @@
 This folder contains code to create error diagrams, calcuate area under error diagram, reproduce Leun's result, and test on two more models: MDA Div and MDA Sub
 * Functions to create error diagrams and calcuate area under error diagram are in [SupportFunctions](./SupportFunctions) folder.
 * **Demo on how to use SupportFunctions are in [Demo](./Demo)**.
-* Functions to reproduce Leun's result and analyze the MDA Model `(W(M) = k * (nu ^M))` using our own code is in [MDA](./MDA) folder.
-* Functions to produce and analyze MDA Div Model `W(M) = k * (nu ^M / M)` is in [MDAScaledByDiv](./MDAScaledByDiv) folder.  
-* Functions to produce and analyze MDA Sub Model `W(M) = k * (nu ^M - tM)` is in [MDAScaledBySub](./MDAScaledBySub) folder.
+* Functions to reproduce Leun's result and analyze the MDA Model `(W(M) = k * (mu ^M))` using our own code is in [MDA](./MDA) folder.
+* Functions to produce and analyze MDA Div Model `W(M) = k * (mu ^M / M)` is in [MDAScaledByDiv](./MDAScaledByDiv) folder.  
+* Functions to produce and analyze MDA Sub Model `W(M) = k * (mu ^M - tM)` is in [MDAScaledBySub](./MDAScaledBySub) folder.
 
 
 How to run the code:
