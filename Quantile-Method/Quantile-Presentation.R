@@ -89,7 +89,7 @@ for (i in 2:length(quan)){
 }
 
 jpeg(file="90Percentile.jpeg",1200,800)
-plot(maglist,quan,cex=2,cex.main=1.5,cex.lab=1.5,cex.axis=1.2,xlab="Magnitude",ylab="Window Steps",main="90 Percentiles of Waiting Times",pch=19)
+plot(maglist,quan,cex=2,cex.main=1.5,cex.lab=1.5,cex.axis=1.2,xlab="Magnitude",ylab="Window Steps (in days)",main="90th Percentiles of Waiting Times",pch=19)
 dev.off()
 
 ######################################################################
