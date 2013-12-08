@@ -83,10 +83,15 @@ maglist=seq(3.1,max(mags)+0.1,0.1)
 
 #######################################################################
 ## Plot 90th Percentiles
+quan=matrix(0,nrow=length(maglist),ncol=1)
+quan[1]=quantile(times[which(mags==maglist[1])+1]-times[which(mags==maglist[1] )],probs=0.9)
+for (i in 2:length(quan)){
+  quan[i]=quantile(times[which(mags>maglist[i] & mags<=maglist[i+1])+1]-times[which(mags>maglist[i] & mags<=maglist[i+1])],probs=0.9,na.rm=TRUE)
+}
+
 jpeg(file="90Quantile.jpeg",1200,800)
 plot(maglist,quan,xlab="Magnitude",ylab="Window Steps")
 dev.off()
-
 
 ############################################################
 
