@@ -1,4 +1,3 @@
-
 library(sfsmisc)
 
 ################################################
@@ -80,6 +79,13 @@ Qfun=function(mag,quan){
 mags=DataFrame[DataFrame$magnitude > 3,]$magnitude
 times=DataFrame[DataFrame$magnitude > 3,]$time
 maglist=seq(3.1,max(mags)+0.1,0.1)
+
+
+#######################################################################
+## Plot 90th Percentiles
+jpeg(file="90Quantile.jpeg",1200,800)
+plot(maglist,quan,xlab="Magnitude",ylab="Window Steps")
+dev.off()
 
 
 ############################################################
