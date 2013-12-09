@@ -5,3 +5,6 @@ MDA Div Model `W(M) = k * (mu ^M / M)`
 
 MDA Sub Model `W(M) = k * (mu ^M - tM)`  
 ![](ErrorSMDAsub.jpeg)  
+
+
+Codes: [ScaledMDA-Presentation.R](ScaledMDA-Presentation.R)  
