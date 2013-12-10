@@ -1,7 +1,7 @@
 #first, need to install "sfsmisc" package, can run this: 
 install.packages("sfsmisc")
 
-library(sfsmisc)
+library('sfsmisc')
 
 ## Quantile-Method #################################
 
