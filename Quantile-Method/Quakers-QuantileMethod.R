@@ -1,5 +1,5 @@
 #first, need to install "sfsmisc" package, can run this: 
-#install.packages("sfsmisc")
+install.packages("sfsmisc")
 
 library(sfsmisc)
 
