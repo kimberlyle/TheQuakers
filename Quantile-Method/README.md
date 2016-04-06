@@ -5,7 +5,7 @@ Updated:
 Using our own algorithm of producing tao and v, we examined the models again:  
 
 With our algorithm, Luen's MDA model returns:  
-![](../ErrorLuen.jpeg)  
+![](~/ErrorLuen.jpeg)  
 
 
 Then similar tuning processes are done, and it is showen that considering 5 successors to the earthquakes and seting 95 percentile will return the least area under the error curve:  
