@@ -1,5 +1,5 @@
 setwd(
-  #  '/home/sunnymh/stat157/final_project'
+  #  '/home/kimberlyle/stat157/final_project'
   # Please enter the directory where this file and data is saved
   )
 
